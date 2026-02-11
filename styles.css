@@ -203,6 +203,30 @@ button.glow {
     }
 }
 
+.pulse-btn {
+    animation: gentle-pulse 2s infinite ease-in-out;
+    font-size: 1.4rem;
+    /* Make it slightly larger as requested */
+    padding: 16px 40px;
+}
+
+@keyframes gentle-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(255, 105, 180, 0.6);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+    }
+}
+
 
 /* Confetti Canvas */
 #confetti-canvas {
