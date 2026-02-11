@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Theodore! 🎉</title>
+    <title>For My Dear Theodore 💫</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- SECTION 1: WELCOME SCREEN -->
-    <header id="welcome-section" class="screen active">
-        <h1 class="main-title">Happy Birthday Chaitra 🎂🎉</h1>
-        <p class="subtitle">My dear Theodore, this little birthday surprise is just for you</p>
-        <button id="start-btn" class="primary-btn glow">Start 🎁</button>
+    <header id="stage-1" class="screen active">
+        <h1 class="main-title">Hey my dear Theodore 💫</h1>
+        <p class="subtitle">I wanted to show you something…</p>
+        <button id="btn-1" class="primary-btn glow">Click Here 💌</button>
     </header>
 
-    <!-- SECTION 2: MESSAGE SECTION -->
-    <section id="message-section" class="screen hidden">
-        <div id="message-content" class="fade-content hidden">
-            <div class="card">
-                <p class="message-text">
-                    My dear Theodore,<br><br>
-                    Wishing you a day filled with smiles, calm moments, and happiness.
-                    You are truly special, and today is all about you.
-                </p>
-            </div>
+    <!-- SECTION 2: FIRST PHOTO (HER IMAGE) -->
+    <section id="stage-2" class="screen hidden">
+        <div class="photo-card fade-up">
+            <!-- REPLACE SRC WITH HER FIRST IMAGE -->
+            <img src="https://picsum.photos/seed/theodore1/400/500" alt="Special Memory" class="featured-img">
+            <p class="caption">A smile that stays in my mind.</p>
         </div>
-        <button id="reveal-message-btn" class="primary-btn">Click Here My Dear 💌</button>
-        <button id="next-to-photos-btn" class="secondary-btn hidden">Continue to Photos 👇</button>
+        <button id="btn-2" class="primary-btn">See Next 📸</button>
     </section>
 
-    <!-- SECTION 3: PHOTO SECTION -->
-    <section id="photo-section" class="screen hidden">
-        <h2 class="section-title">Memories 📷</h2>
-        <p class="instruction-text">Click to see them clearly</p>
-        
-        <div id="photo-grid" class="photo-grid hidden">
-            <!-- Placeholders for 6 photos. Replace src with actual photos later. -->
-            <div class="photo-item"><img src="https://picsum.photos/seed/birthday11/300/300" alt="Memory 1" class="gallery-img"></div>
-            <div class="photo-item"><img src="https://picsum.photos/seed/birthday12/300/300" alt="Memory 2" class="gallery-img"></div>
-            <div class="photo-item"><img src="https://picsum.photos/seed/birthday13/300/300" alt="Memory 3" class="gallery-img"></div>
-            <div class="photo-item"><img src="https://picsum.photos/seed/birthday14/300/300" alt="Memory 4" class="gallery-img"></div>
-            <div class="photo-item"><img src="https://picsum.photos/seed/birthday15/300/300" alt="Memory 5" class="gallery-img"></div>
-            <div class="photo-item"><img src="https://picsum.photos/seed/birthday16/300/300" alt="Memory 6" class="gallery-img"></div>
+    <!-- SECTION 3: SECOND PHOTO (HER IMAGE) -->
+    <section id="stage-3" class="screen hidden">
+        <div class="photo-card fade-up">
+            <!-- REPLACE SRC WITH HER SECOND IMAGE -->
+            <img src="https://picsum.photos/seed/theodore2/400/500" alt="Special Moment" class="featured-img">
+            <p class="caption">A moment that feels special.</p>
         </div>
-
-        <button id="reveal-photos-btn" class="primary-btn">See Photos 📸</button>
-        <button id="next-to-surprise-btn" class="secondary-btn hidden">One More Surprise 👇</button>
+        <button id="btn-3" class="primary-btn">One Last Thing 🎁</button>
     </section>
 
-    <!-- SECTION 4 & 5: FINAL SURPRISE & WISH -->
-    <section id="surprise-section" class="screen hidden">
-        <div id="final-content" class="final-content hidden">
-            <p class="surprise-text">You mean a lot to me, my dear Theodore 🌟</p>
-            <h2 class="final-wish">Once again, Happy Birthday My Dear Theodore 🎂💐</h2>
-            <p class="final-sub">Warm wishes always</p>
+    <!-- SECTION 4: FINAL REVEAL (PAPER IMAGE) -->
+    <section id="stage-4" class="screen hidden">
+        <div class="photo-card fade-up final-card">
+            <!-- REPLACE SRC WITH IMAGE OF PAPER WITH INSTAGRAM ID -->
+            <img src="https://picsum.photos/seed/paper/400/500" alt="The Paper Memory" class="featured-img paper-img">
+            <h2 class="final-title">Do you remember this?</h2>
+            <p class="final-text">From that small paper… to this little website.<br>
+                My dear Theodore, this memory means a lot.</p>
         </div>
-        
-        <button id="surprise-btn" class="primary-btn">One More Surprise 🎈</button>
+        <div class="confetti-container"></div>
     </section>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox hidden">
-        <span class="close-lightbox">&times;</span>
-        <img class="lightbox-img" id="lightbox-img">
-    </div>
 
     <!-- Canvas for Confetti -->
     <canvas id="confetti-canvas"></canvas>
 
     <script src="script.js"></script>
 </body>
+
 </html>
