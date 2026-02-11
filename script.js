@@ -3,13 +3,15 @@ const stages = {
     first: document.getElementById('stage-1'),
     second: document.getElementById('stage-2'),
     third: document.getElementById('stage-3'),
-    final: document.getElementById('stage-4')
+    final: document.getElementById('stage-4'),
+    message: document.getElementById('stage-5')
 };
 
 const buttons = {
     btn1: document.getElementById('btn-1'),
     btn2: document.getElementById('btn-2'),
-    btn3: document.getElementById('btn-3')
+    btn3: document.getElementById('btn-3'),
+    btn4: document.getElementById('btn-4')
 };
 
 // Transition Logic
@@ -43,7 +45,14 @@ buttons.btn2.addEventListener('click', () => {
 
 buttons.btn3.addEventListener('click', () => {
     switchSection(stages.third, stages.final);
-    // Stop balloons
+    // Balloons still active in stage 4 (paper reveal) as per user request flow? 
+    // Actually user said "remove moving animation" for final page. 
+    // We will keep balloons for paper reveal, but stop them for final message.
+});
+
+buttons.btn4.addEventListener('click', () => {
+    switchSection(stages.final, stages.message);
+    // Stop balloons now
     document.getElementById('balloon-container').style.display = 'none';
     // Start confetti
     setTimeout(startConfetti, 500);
