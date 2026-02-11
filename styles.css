@@ -324,6 +324,78 @@ button.glow {
     background: #ff4d4d;
 }
 
+/* Final Section Styling */
+.final-message-container {
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.memory-text {
+    font-size: 1.3rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 25px;
+    font-family: var(--font-heading);
+}
+
+.memory-block {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent-pink);
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight-text {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.detail-text {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+
+.sub-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.final-wish {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--btn-color);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.closing-block {
+    margin-bottom: 30px;
+}
+
+.final-closing {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.kannada-final {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 2.5rem;
@@ -347,9 +419,7 @@ button.glow {
         padding: 0 15px;
     }
 
-    /* Ensure walker is small on mobile */
-    .walker {
-        transform: scale(0.7);
-        transform-origin: bottom center;
+    .final-wish {
+        font-size: 2.2rem;
     }
 }
